@@ -1,13 +1,14 @@
-$pink: red;
+
 
 body {
 	width: 80%;
+	margin: 0 auto;
 }
 
 #logo {
 	width: 50%;
 	height: auto;
-	margin: 0 auto;
+	margin: 25px auto;
 }
 
 #logo img {
@@ -16,6 +17,19 @@ body {
 
 .words {
 	color: rgb(235,150,225);
-	text-align:center;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
 	font-family: 'Bitter', serif;
+	border-top: 3px solid rgb(235,150,225);
+	width: 80%;
 }
+
+.section {
+
+}
+
+.code {
+	font-family: 
+}
+
