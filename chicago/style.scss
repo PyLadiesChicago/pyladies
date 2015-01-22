@@ -1,0 +1,66 @@
+
+$pink: rgb(255,100,100);
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+a {
+	border: none;
+	color: $pink;
+}
+
+li:hover {
+	color:white;
+	background-color: $pink;
+}
+
+#logo {
+	width: 50%;
+	height: auto;
+	margin: 25px auto 0 auto;
+}
+
+#logo img {
+	width: 100%;
+}
+
+nav li {
+	width: 15.7%;
+	padding: 5px 1px 5px 2px;
+	float: left;
+	border-top: 2px solid $pink;
+	border-bottom: 2px solid $pink;
+	border-left: 2px solid $pink;
+}
+
+nav a:last-of-type li {
+	border-right: 2px solid $pink;
+}
+
+nav {
+	width: 50%;
+}
+
+ul {
+	display: block;
+	overflow: hidden;
+	// vertical-align: middle; 
+}
+
+.code {
+	font-family: "Source Code Pro";
+	line-height: 2;
+}
+
+.section {
+	color: $pink;
+	margin: 0 auto 25px auto;
+	text-align: center;
+}
+
+nav h2 {
+	margin: 10px auto;
+}
+
