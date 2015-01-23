@@ -48,4 +48,8 @@ ul {
 nav h2 {
   margin: 10px auto; }
 
+.hidden {
+  border: 1px solid red;
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
