@@ -70,6 +70,41 @@ nav h2 {
 	display: none;
 }
 
+// WHO---------------------
+.person {
+	height: 120px;
+	width: 55%;
+	padding: 10px 0;
+	display: block;
+	margin: 0 auto;
+	// width: 48%;
+}
+
+.avatar {
+	width: 24%;
+	float: left;
+	display: inline-block;
+}
+
+.avatar img {
+	width: 100%;
+}
+
+.bio {
+	width: 60%;
+	height: 110px;
+	float: right;
+	text-align: left;
+	position: relative;
+}
+
+div.bio p {
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	transform: translate(0, -50%);
+}
+
 @media screen and (max-width: 1200px) {
 	#logo, nav {
 		width: 60%;
