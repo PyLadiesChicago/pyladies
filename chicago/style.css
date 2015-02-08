@@ -62,7 +62,7 @@ h3 {
   margin: 50px 0 20px 0; }
 
 .person {
-  height: 150px;
+  height: 160px;
   width: 55%;
   margin: 10px 0;
   display: block;
@@ -72,11 +72,11 @@ h3 {
   width: 24%;
   display: inline-block; }
 
-.avatar:nth-of-type(2n) {
-  float: right; }
-
-.avatar:nth-of-type(2n-1) {
+.person:nth-of-type(odd) .avatar {
   float: left; }
+
+.person:nth-of-type(even) .avatar {
+  float: right; }
 
 .avatar img {
   width: 100%;
@@ -91,11 +91,11 @@ h3 {
   text-align: center;
   position: relative; }
 
-.bio:nth-of-type(2n) {
-  float: right; }
-
-.bio:nth-of-type(2n-1) {
+.person:nth-of-type(2n) .bio {
   float: left; }
+
+.person:nth-of-type(2n-1) .bio {
+  float: right; }
 
 div.bio p {
   width: 100%;
@@ -103,7 +103,7 @@ div.bio p {
   top: 55%;
   margin: 0;
   transform: translate(0, -40%);
-  line-height: 120%; }
+  line-height: 1.2; }
 
 @media screen and (max-width: 1200px) {
   #logo, nav {
@@ -117,7 +117,10 @@ div.bio p {
 
   nav li {
     width: 15.3%;
-    font-size: .85em; } }
+    font-size: .85em; }
+
+  div.bio p {
+    font-size: .9em; } }
 @media screen and (max-width: 750px) {
   #logo, nav {
     width: 80%; }
@@ -133,21 +136,52 @@ div.bio p {
     border-right: 2px solid #ff6464; }
 
   nav a:nth-of-type(3) li {
-    border-right: 2px solid #ff6464; } }
+    border-right: 2px solid #ff6464; }
+
+  .person {
+    width: 80%; } }
 @media screen and (max-width: 662px) {
   nav li {
     width: 31.9%; } }
 @media screen and (max-width: 616px) {
   nav li {
-    width: 31.6%; } }
+    width: 31.6%; }
+
+  .person {
+    width: 85%; } }
 @media screen and (max-width: 509px) {
   nav li {
-    width: 31.3%; } }
+    width: 31.3%; }
+
+  .person {
+    height: 200px;
+    dispaly: flex;
+    flex-direction: column; }
+
+  .avatar {
+    display: block;
+    width: 100%;
+    margin: 10px 0; }
+
+  .avatar img {
+    margin: 0 auto;
+    width: 25%; }
+
+  .bio {
+    width: 100%;
+    height: auto;
+    max-height: 128px;
+    display: block; }
+
+  div.bio p {
+    position: static;
+    top: 0;
+    transform: translate(0, 0); } }
 @media screen and (max-width: 434px) {
   nav li {
     width: 31%; } }
 @media screen and (max-width: 390) {
   nav li {
-    width: 30%; } }
+    width: 25%; } }
 
 /*# sourceMappingURL=style.css.map */

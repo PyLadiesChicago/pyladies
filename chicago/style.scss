@@ -83,7 +83,7 @@ h3 {
 }
 
 .person {
-	height: 150px;
+	height: 160px;
 	width: 55%;
 	margin: 10px 0;
 	display: block;
@@ -95,12 +95,12 @@ h3 {
 	display: inline-block;
 }
 
-.avatar:nth-of-type(2n) {
-	float: right;
+.person:nth-of-type(odd) .avatar {
+	float: left;
 }
 
-.avatar:nth-of-type(2n-1) {
-	float: left;
+.person:nth-of-type(even) .avatar {
+	float: right;
 }
 
 .avatar img {
@@ -118,12 +118,12 @@ h3 {
 	position: relative;
 }
 
-.bio:nth-of-type(2n) {
-	float: right;
+.person:nth-of-type(2n) .bio {
+	float: left;
 }
 
-.bio:nth-of-type(2n-1) {
-	float: left;
+.person:nth-of-type(2n-1) .bio {
+	float: right;
 	// text-align: right;
 }
 
@@ -133,7 +133,7 @@ div.bio p {
 	top: 55%;
 	margin: 0;
 	transform: translate(0, -40%);
-	line-height: 120%;
+	line-height: 1.2;
 }
 
 // ******** RESPONSIVENESS *********
@@ -158,6 +158,10 @@ div.bio p {
 		font-size: .85em;
 	}
 
+	div.bio p {
+		font-size: .9em;
+	}
+
 }
 
 @media screen and (max-width: 750px) {
@@ -180,7 +184,12 @@ div.bio p {
 
 	nav a:nth-of-type(3) li {
 		border-right: 2px solid $pink;
-		} 
+	} 
+
+	.person {
+		width: 80%;
+	}
+
 	}
 
 @media screen and (max-width: 662px) {
@@ -193,11 +202,45 @@ div.bio p {
 	nav li {
 		width: 31.6%;
 	}
+
+	.person {
+		width: 85%;
+	}
 }
 
 @media screen and (max-width: 509px) {
 	nav li {
 		width: 31.3%;
+	}
+
+	.person {
+		height: 200px;
+		dispaly: flex;
+		flex-direction: column;
+	}
+
+	.avatar {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.avatar img {
+		margin: 0 auto;
+		width: 25%;
+	}
+
+	.bio {
+		width: 100%;
+		height: auto;
+		max-height: 128px;
+		display: block;
+	}
+
+	div.bio p {
+		position: static;
+		top: 0;
+		transform: translate(0,0);
 	}
 }
 
@@ -209,7 +252,7 @@ div.bio p {
 
 @media screen and (max-width: 390) {
 	nav li {
-		width: 30%;
+		width: 25%;
 	}
 }
 
