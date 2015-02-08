@@ -31,7 +31,10 @@ nav li {
   float: left;
   border-top: 2px solid #ff6464;
   border-bottom: 2px solid #ff6464;
-  border-left: 2px solid #ff6464; }
+  border-left: 2px solid #ff6464;
+  font-size: .9em;
+  font-family: Bitter;
+  font-weight: 400; }
 
 nav a:last-of-type li {
   border-right: 2px solid #ff6464; }
@@ -53,32 +56,48 @@ nav h2 {
   display: none; }
 
 .person {
-  height: 120px;
+  height: 150px;
   width: 55%;
-  padding: 10px 0;
+  margin: 10px 0;
   display: block;
   margin: 0 auto; }
 
 .avatar {
   width: 24%;
-  float: left;
   display: inline-block; }
 
+.avatar:nth-of-type(2n) {
+  float: right; }
+
+.avatar:nth-of-type(2n-1) {
+  float: left; }
+
 .avatar img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 100%;
+  border: solid 5px #ff6464; }
 
 .bio {
-  width: 60%;
+  font-family: Bitter;
+  font-weight: 400;
+  width: 70%;
   height: 110px;
-  float: right;
-  text-align: left;
+  text-align: center;
   position: relative; }
 
+.bio:nth-of-type(2n) {
+  float: right; }
+
+.bio:nth-of-type(2n-1) {
+  float: left; }
+
 div.bio p {
+  width: 100%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   margin: 0;
-  transform: translate(0, -50%); }
+  transform: translate(0, -40%);
+  line-height: 120%; }
 
 @media screen and (max-width: 1200px) {
   #logo, nav {

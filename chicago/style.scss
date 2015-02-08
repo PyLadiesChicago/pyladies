@@ -1,4 +1,5 @@
 $pink: rgb(255,100,100);
+$font: Bitter;
 
 body {
 	width: 80%;
@@ -42,7 +43,9 @@ nav li {
 	border-top: 2px solid $pink;
 	border-bottom: 2px solid $pink;
 	border-left: 2px solid $pink;
-	// font-size: .9em;
+	font-size: .9em;
+	font-family: $font;
+	font-weight: 400;
 }
 
 nav a:last-of-type li {
@@ -72,38 +75,60 @@ nav h2 {
 
 // WHO---------------------
 .person {
-	height: 120px;
+	height: 150px;
 	width: 55%;
-	padding: 10px 0;
+	margin: 10px 0;
 	display: block;
 	margin: 0 auto;
-	// width: 48%;
 }
 
 .avatar {
 	width: 24%;
-	float: left;
 	display: inline-block;
+}
+
+.avatar:nth-of-type(2n) {
+	float: right;
+}
+
+.avatar:nth-of-type(2n-1) {
+	float: left;
 }
 
 .avatar img {
 	width: 100%;
+	border-radius: 100%;
+	border: solid 5px $pink;
 }
 
 .bio {
-	width: 60%;
+	font-family: $font;
+	font-weight: 400;
+	width: 70%;
 	height: 110px;
-	float: right;
-	text-align: left;
+	text-align: center;
 	position: relative;
 }
 
-div.bio p {
-	position: absolute;
-	top: 50%;
-	margin: 0;
-	transform: translate(0, -50%);
+.bio:nth-of-type(2n) {
+	float: right;
 }
+
+.bio:nth-of-type(2n-1) {
+	float: left;
+	// text-align: right;
+}
+
+div.bio p {
+	width: 100%;
+	position: absolute;
+	top: 55%;
+	margin: 0;
+	transform: translate(0, -40%);
+	line-height: 120%;
+}
+
+// ******** RESPONSIVENESS *********
 
 @media screen and (max-width: 1200px) {
 	#logo, nav {
