@@ -74,6 +74,14 @@ nav h2 {
 }
 
 // WHO---------------------
+h3 {
+	font-family: $font;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 50px 0 20px 0;
+	// text-decoration: underline;
+}
+
 .person {
 	height: 150px;
 	width: 55%;

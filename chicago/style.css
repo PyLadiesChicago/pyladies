@@ -55,6 +55,12 @@ nav h2 {
   border: 1px solid red;
   display: none; }
 
+h3 {
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 50px 0 20px 0; }
+
 .person {
   height: 150px;
   width: 55%;
