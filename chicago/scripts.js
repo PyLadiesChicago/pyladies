@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('a').click(function() {
+	$('a.internal').click(function() {
 		event.preventDefault();
 		var linkName = this.children[0].className;
 		console.log(linkName);

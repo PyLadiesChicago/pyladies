@@ -55,6 +55,33 @@ nav h2 {
   border: 1px solid red;
   display: none; }
 
+p {
+  font-family: Bitter;
+  line-height: 1.3;
+  margin: 15px auto; }
+
+.why-block p {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+.why-block, .wat-block, .how-block {
+  width: 65%; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 100%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
 h3 {
   font-family: Bitter;
   font-weight: bold;
@@ -148,7 +175,10 @@ div.bio p {
     width: 31.6%; }
 
   .person {
-    width: 85%; } }
+    width: 85%; }
+
+  .why-block {
+    width: 75%; } }
 @media screen and (max-width: 509px) {
   nav li {
     width: 31.3%; }
@@ -179,7 +209,11 @@ div.bio p {
     transform: translate(0, 0); } }
 @media screen and (max-width: 434px) {
   nav li {
-    width: 31%; } }
+    width: 31%; }
+
+  .why-block p {
+    width: 120%;
+    margin-left: -10%; } }
 @media screen and (max-width: 390) {
   nav li {
     width: 25%; } }

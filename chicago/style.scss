@@ -73,6 +73,39 @@ nav h2 {
 	display: none;
 }
 
+p {
+	font-family: $font;
+	line-height: 1.3;
+	margin: 15px auto;
+}
+
+.why-block p {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.why-block, .wat-block, .how-block {
+	width: 65%;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 100%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	// width: 55%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
 // WHO---------------------
 h3 {
 	font-family: $font;
@@ -190,7 +223,7 @@ div.bio p {
 		width: 80%;
 	}
 
-	}
+}
 
 @media screen and (max-width: 662px) {
 	nav li {
@@ -205,6 +238,10 @@ div.bio p {
 
 	.person {
 		width: 85%;
+	}
+
+	.why-block {
+		width: 75%;
 	}
 }
 
@@ -247,6 +284,11 @@ div.bio p {
 @media screen and (max-width: 434px) {
 	nav li {
 		width: 31%;
+	}
+
+		.why-block p {
+		width: 120%;
+		margin-left: -10%;
 	}
 }
 
