@@ -146,7 +146,7 @@ div.bio p {
     width: 15.3%;
     font-size: .85em; }
 
-  div.bio p {
+  p {
     font-size: .9em; } }
 @media screen and (max-width: 750px) {
   #logo, nav {
